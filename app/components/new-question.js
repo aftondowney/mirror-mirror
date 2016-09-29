@@ -2,9 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
+    // display add new question form
     questionFormShow() {
       this.set('addNewQuestion', true);
     },
+    // save a new question
     saveQuestion() {
       var params = {
         content: this.get('content'),
